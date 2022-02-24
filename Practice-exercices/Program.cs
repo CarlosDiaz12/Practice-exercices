@@ -8,13 +8,7 @@ namespace Practice_exercices
     {
         static void Main(string[] args)
         {
-            var x = "sihT si na !elpmaxe";
-            var result = "";
-            foreach (var item in x.Split())
-            {
-                result = result + $"{string.Join("", item.Reverse())} ";
-            }
-            Console.WriteLine(result.TrimEnd());
+            RetosMoureDev.FizzBuzz();
             Console.ReadKey();
         }
 

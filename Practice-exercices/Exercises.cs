@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Practice_exercices
 {
-   public class Exercises
+
+    /*
+                 var x = "sihT si na !elpmaxe";
+            var result = "";
+            foreach (var item in x.Split())
+            {
+                result = result + $"{string.Join("", item.Reverse())} ";
+            }
+            Console.WriteLine(result.TrimEnd());
+            Console.ReadKey();
+     */
+    public class Exercises
     {
 
         /*
