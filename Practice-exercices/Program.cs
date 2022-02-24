@@ -8,7 +8,7 @@ namespace Practice_exercices
     {
         static void Main(string[] args)
         {
-            RetosMoureDev.FizzBuzz();
+            Console.WriteLine(RetosMoureDev.EsAnagrama("amor", "roma"));
             Console.ReadKey();
         }
 
