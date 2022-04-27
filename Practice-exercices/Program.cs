@@ -8,7 +8,7 @@ namespace Practice_exercices
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(RetosMoureDev.EsAnagrama("mary", "army"));
+            Console.WriteLine(Exercises.SpinWords("Hey fellow warriors"));
             Console.ReadKey();
         }
 

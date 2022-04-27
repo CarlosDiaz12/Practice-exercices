@@ -6,20 +6,39 @@ using System.Threading.Tasks;
 
 namespace Practice_exercices
 {
-
-    /*
-                 var x = "sihT si na !elpmaxe";
-            var result = "";
-            foreach (var item in x.Split())
-            {
-                result = result + $"{string.Join("", item.Reverse())} ";
-            }
-            Console.WriteLine(result.TrimEnd());
-            Console.ReadKey();
-     */
     public class Exercises
     {
 
+        /*
+         Write a function that takes in a string of one or more words, and returns the same string, 
+        but with all five or more letter words reversed (Just like the name of this Kata). 
+        Strings passed in will consist of only letters and spaces. Spaces will be included only when 
+        more than one word is present.
+
+        Examples: 
+        spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" 
+        spinWords( "This is a test") => returns "This is a test" 
+        spinWords( "This is another test" )=> returns "This is rehtona test"
+         */
+        public static string SpinWords(string sentence)
+        {
+            var words = sentence.Split(' ');
+            for (int i = 0; i < words.Length; i++)
+            {
+                var word = words[i];
+                if(word.Length >= 5)
+                {
+                    var reversedWord = string.Empty;
+                    for (int index = word.Length - 1; index >= 0; index--)
+                    {
+                        reversedWord += word[index];
+                    }                  
+                    words[i] = reversedWord;
+                }
+            }
+
+            return string.Join(" ", words);
+        }
         /*
          Implemente una funcion twoSum, tal que dado un array de enteros y un numero K, devuelva los pares de 
             numeros que suman K
@@ -27,7 +46,6 @@ namespace Practice_exercices
             ex. [0,9,7,12,5,8,3]
             res: [0,12], [3,9],[5,7]
          */
-
         public static List<int[]> TwoSum(int [] arr, int target)
         {
             var results = new List<int[]>();
