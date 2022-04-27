@@ -8,10 +8,8 @@ namespace Practice_exercices
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Exercises.SpinWords("Hey fellow warriors"));
+            Console.WriteLine(Exercises.MultiplesOf3Or5(10));
             Console.ReadKey();
         }
-
-
     }
 }
