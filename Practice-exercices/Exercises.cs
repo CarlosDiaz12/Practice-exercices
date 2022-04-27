@@ -23,9 +23,9 @@ namespace Practice_exercices
             if (value < 0) return 0;
 
             List<int> result = new List<int>();
-            for (int i = 0; i < value; i++)
+            for (int i = 1; i < value; i++)
             {
-                if (IsMultipleOfThree(i, value) || IsMultipleOfFive(i, value))
+                if ((i % 3 == 0) || (i % 5 == 0))
                 {
                     if(!result.Contains(i))
                     {
@@ -37,25 +37,6 @@ namespace Practice_exercices
             return result.Sum();
         }
 
-        private static bool IsMultipleOfThree(int n, int target)
-        {
-            var multiplosDeTres = new int[target + 1];
-            for (int i = 1; i <= target; i++)
-            {
-                multiplosDeTres[i] = (i * 3);
-            }
-            return multiplosDeTres.Contains(n);
-        }
-
-        private static bool IsMultipleOfFive(int n, int target)
-        {
-            var multiplosDeCinco = new int[target + 1];
-            for (int i = 1; i <= target; i++)
-            {
-                multiplosDeCinco[i] = (i * 5);
-            }
-            return multiplosDeCinco.Contains(n);
-        }
         /*
          Write a function that takes in a string of one or more words, and returns the same string, 
         but with all five or more letter words reversed (Just like the name of this Kata). 
