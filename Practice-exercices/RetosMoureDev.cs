@@ -8,6 +8,18 @@ namespace Practice_exercices
 {
     public static class RetosMoureDev
     {
+
+        /*
+             * Enunciado: Escribe un programa que imprima los 50 primeros números de la sucesión de Fibonacci empezando en 0.
+             * La serie Fibonacci se compone por una sucesión de números en la que el siguiente siempre es la suma de los dos anteriores.
+             * 0, 1, 1, 2, 3, 5, 8, 13...
+             *
+         */
+        public static void Fibonacci()
+        {
+
+        }
+
         /*
             * Enunciado: Escribe una función que reciba dos palabras (String) y retorne verdadero o falso (Bool) según sean o no anagramas.
              * Un Anagrama consiste en formar una palabra reordenando TODAS las letras de otra palabra inicial.

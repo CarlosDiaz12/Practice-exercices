@@ -8,7 +8,7 @@ namespace Practice_exercices
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(RetosMoureDev.EsAnagrama("amor", "roma"));
+            Console.WriteLine(RetosMoureDev.EsAnagrama("mary", "army"));
             Console.ReadKey();
         }
 
