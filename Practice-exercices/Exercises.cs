@@ -27,13 +27,8 @@ namespace Practice_exercices
             {
                 var word = words[i];
                 if(word.Length >= 5)
-                {
-                    var reversedWord = string.Empty;
-                    for (int index = word.Length - 1; index >= 0; index--)
-                    {
-                        reversedWord += word[index];
-                    }                  
-                    words[i] = reversedWord;
+                {               
+                    words[i] = new string(words[i].Reverse().ToArray());
                 }
             }
 
