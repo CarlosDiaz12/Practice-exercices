@@ -8,7 +8,7 @@ namespace Practice_exercices
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Exercises.MultiplesOf3Or5(10));
+            Console.WriteLine(Exercises.CreatePhoneNumber(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }));
             Console.ReadKey();
         }
     }

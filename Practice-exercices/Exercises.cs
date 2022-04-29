@@ -10,6 +10,18 @@ namespace Practice_exercices
     {
 
         /*
+         Write a function that accepts an array of 10 integers (between 0 and 9), 
+        that returns a string of those numbers in the form of a phone number.
+         */
+        public static string CreatePhoneNumber(int[] numbers)
+        {
+            var str = string.Join("", numbers);
+            return $"({str.Substring(0, 3)}) {str.Substring(3, 3)}-{str.Substring(6, 4)}";
+            /* another approach
+               return long.Parse(string.Concat(numbers)).ToString("(000) 000-0000")
+            */
+        }
+        /*
          If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
         Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in. 
