@@ -8,7 +8,15 @@ namespace Practice_exercices
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Exercises.CreatePhoneNumber(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 }));
+            Hackerrank.hourglassSum(new List<List<int>>
+            {
+                new List<int>{ 1, 1, 1, 0, 0, 0},
+                new List<int>{ 0, 1, 0, 0, 0, 0 },
+                new List<int>{ 1, 1, 1, 0, 0, 0 },
+                new List<int>{ 0, 0, 2, 4, 4, 0 },
+                new List<int>{ 0, 0, 0, 2, 0, 0 },
+                new List<int>{ 0, 0, 1, 2, 4, 0 }
+            });
             Console.ReadKey();
         }
     }
