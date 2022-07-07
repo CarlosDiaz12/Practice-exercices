@@ -9,6 +9,37 @@ namespace Practice_exercices
     public class Exercises
     {
 
+        public static List<string> GetValidPhoneNumbers(string texto)
+        {
+            var codigosAreas = new string[] { "829", "809", "849" };
+            var numerosEncontrados = new List<string>();
+
+            for (int i = 0; i < texto.Length; i++)
+            {
+                try
+                {
+                    var index = i;
+                    var codigoArea = texto.ElementAt(index).ToString() + texto[index + 1].ToString() + texto[index + 2].ToString();
+                    var esCodigoArea = codigosAreas.Any(x => x == codigoArea);
+                    if (!esCodigoArea) continue;
+                    var numeroCompleto = texto.Substring(index, 10);
+
+                    numerosEncontrados.Add(numeroCompleto);
+
+                    if ((index + 10) >= texto.Length)
+                        break;
+
+                    i = index + 10;
+
+                }
+                catch (Exception)
+                {
+                    continue;
+                }
+            }
+            return numerosEncontrados;
+        }
+
         /*
          Write a function that accepts an array of 10 integers (between 0 and 9), 
         that returns a string of those numbers in the form of a phone number.
